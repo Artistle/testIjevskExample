@@ -1,4 +1,4 @@
-package com.example.ijevsk;
+package com.example.ijevsk.View;
 
 import com.arellomobile.mvp.MvpView;
 import com.example.ijevsk.Presenter.Adapters.UserAdapter;

@@ -1,5 +1,7 @@
 package com.example.ijevsk.Data;
 
+import android.util.Log;
+
 import com.example.ijevsk.Model.UserModel;
 import com.example.ijevsk.RetrofitDI.RetrofitDI;
 import com.orm.SugarRecord;
@@ -28,7 +30,7 @@ public class DataRx extends SugarRecord {
                 .subscribe(this::handleResponse, this::handleError));
     }
     private void handleError(Throwable throwable) {
-
+        Log.e("error bd", "error" + throwable.getLocalizedMessage());
     }
     private void handleResponse(UserModel.Example example) {
         list = example.getResponse();
@@ -38,7 +40,5 @@ public class DataRx extends SugarRecord {
     public void initDB(List<UserModel.Response> listDB){
         dbHelper = new DbHelper(listDB);
         dbHelper.save();
-
-        dbHelper.getResponseList();
     }
 }

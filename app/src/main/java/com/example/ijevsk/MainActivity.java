@@ -9,6 +9,7 @@ import com.arellomobile.mvp.presenter.InjectPresenter;
 import com.example.ijevsk.Data.DataRx;
 import com.example.ijevsk.Presenter.Adapters.UserAdapter;
 import com.example.ijevsk.Presenter.Presenter;
+import com.example.ijevsk.View.View;
 
 public class MainActivity extends MvpActivity implements View {
     private RecyclerView recyclerView;

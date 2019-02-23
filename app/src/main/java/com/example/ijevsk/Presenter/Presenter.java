@@ -7,7 +7,7 @@ import com.arellomobile.mvp.MvpPresenter;
 import com.example.ijevsk.Model.UserModel;
 import com.example.ijevsk.Presenter.Adapters.UserAdapter;
 import com.example.ijevsk.RetrofitDI.RetrofitDI;
-import com.example.ijevsk.View;
+import com.example.ijevsk.View.View;
 
 import java.util.List;
 
